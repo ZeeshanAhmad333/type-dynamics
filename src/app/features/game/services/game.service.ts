@@ -165,7 +165,7 @@ export class GameService {
     // Particles & FX
     this.particles.forEach(p => {
       p.x += p.vx; p.y += p.vy;
-      p.vy += 0.05; // Gravity
+      p.vy += 0.05; // Gravity Here
       p.life -= 2;
     });
     this.particles = this.particles.filter(p => p.life > 0);
