@@ -19,32 +19,32 @@ export class TypingChallengeComponent implements OnInit {
     {
       title: "1. Speed Sprint",
       description: "Set a timer for 1 minute and type as many words as you can without errors. Track your words per minute (WPM) daily to measure improvement.",
-      image: "assets/images/speed-sprint.jpg"
+      image: "assets/images/speed-sprint.webp"
     },
     {
       title: "2. Accuracy Drill",
       description: "Focus on typing passages perfectly without making a single mistake. Accuracy drills help strengthen muscle memory and reduce errors.",
-      image: "assets/images/accuracy-drill.jpg"
+      image: "assets/images/accuracy-drill.webp"
     },
     {
       title: "3. Finger Strength Challenge",
       description: "Type sequences of difficult key combinations to strengthen weaker fingers. Repeating challenging patterns daily improves overall typing control.",
-      image: "assets/images/finger-strength.jpg"
+      image: "assets/images/finger-strength.webp"
     },
     {
       title: "4. Text Mastery",
       description: "Choose a new article or book passage each day and type it word for word. This improves adaptability and your ability to type unfamiliar content quickly.",
-      image: "assets/images/text-mastery.jpg"
+      image: "assets/images/text-mastery.webp"
     },
     {
       title: "5. Random Word Blitz",
       description: "Use random word generators to type 50–100 words quickly. This challenge improves your reflexes and typing rhythm while keeping practice exciting.",
-      image: "assets/images/random-blitz.jpg"
+      image: "assets/images/random-blitz.webp"
     },
     {
       title: "6. Game-based Challenge",
       description: "Play a typing game like TypeRacer or NitroType every day. Incorporating fun elements boosts motivation and helps track real-time typing skills.",
-      image: "assets/images/game-challenge.jpg"
+      image: "assets/images/game-challenge.webp"
     }
   ];
 

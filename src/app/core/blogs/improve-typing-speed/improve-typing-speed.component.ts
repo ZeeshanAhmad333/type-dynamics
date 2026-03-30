@@ -19,52 +19,52 @@ export class ImproveTypingSpeedComponent implements OnInit {
     {
       title: "1. Practice Regularly",
       description: "Consistency is key. Set aside 20-30 minutes daily for typing practice. Use typing games or practice passages to gradually improve speed and accuracy.",
-      image: "assets/images/typing-practice.jpg"
+      image: "assets/images/typing-practice.webp"
     },
     {
       title: "2. Master Proper Finger Placement",
       description: "Follow the touch typing technique where each finger is assigned to specific keys. This improves muscle memory and reduces errors.",
-      image: "assets/images/finger-placement.jpg"
+      image: "assets/images/finger-placement.webp"
     },
     {
       title: "3. Start Slow, Focus on Accuracy",
       description: "Speed comes with accuracy. Avoid rushing. Type slowly at first, and correct mistakes immediately. Once accurate, gradually increase speed.",
-      image: "assets/images/accuracy.jpg"
+      image: "assets/images/accuracy.webp"
     },
     {
       title: "4. Use All Fingers",
       description: "Avoid typing with just two fingers. Using all fingers increases typing speed and ensures more efficient hand movement across the keyboard.",
-      image: "assets/images/all-fingers.jpg"
+      image: "assets/images/all-fingers.webp"
     },
     {
       title: "5. Practice with Real Texts",
       description: "Type articles, blogs, or your own writing instead of repetitive exercises. Real content practice enhances speed in real-world scenarios.",
-      image: "assets/images/real-text.jpg"
+      image: "assets/images/real-text.webp"
     },
     {
       title: "6. Focus on Weak Keys",
       description: "Identify the keys you struggle with most and practice them intensively. Repeating difficult key combinations improves overall speed.",
-      image: "assets/images/weak-keys.jpg"
+      image: "assets/images/weak-keys.webp"
     },
     {
       title: "7. Use Online Typing Tests",
       description: "Platforms like 10FastFingers, TypeRacer, and Typing.com provide structured tests to measure WPM (words per minute) and track progress.",
-      image: "assets/images/typing-test.jpg"
+      image: "assets/images/typing-test.webp"
     },
     {
       title: "8. Maintain Proper Posture",
       description: "Sit upright, keep wrists straight, and position your monitor at eye level. Good posture reduces fatigue and allows faster, more accurate typing.",
-      image: "assets/images/posture.jpg"
+      image: "assets/images/posture.webp"
     },
     {
       title: "9. Learn Keyboard Shortcuts",
       description: "Shortcuts save time and reduce unnecessary hand movement. Practice frequently used commands like copy-paste, undo, and navigation shortcuts.",
-      image: "assets/images/shortcuts.jpg"
+      image: "assets/images/shortcuts.webp"
     },
     {
       title: "10. Stay Relaxed and Take Breaks",
       description: "Typing can be strenuous on your hands. Take short breaks every 20-30 minutes, stretch your fingers, and avoid tension to maintain speed.",
-      image: "assets/images/typing-break.jpg"
+      image: "assets/images/typing-break.webp"
     }
   ];
 
