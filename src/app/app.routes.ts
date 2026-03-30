@@ -9,6 +9,7 @@ import { ScienceBehindAccuracyComponent } from './core/blogs/science-behind-accu
 import { TopOnlineTypingGamesComponent } from './core/blogs/top-online-typing-games/top-online-typing-games.component';
 import { TypingChallengeComponent } from './core/blogs/typing-challenge/typing-challenge.component';
 import { TypingGameComponent } from './core/blogs/typing-game/typing-game.component';
+import { ContactComponent } from './shared/contact/contact.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -21,4 +22,5 @@ export const routes: Routes = [
     {path: 'top-online-typing-games', component: TopOnlineTypingGamesComponent},
     {path: 'typing-challenge', component: TypingChallengeComponent},
     {path: 'typing-game', component: TypingGameComponent}, 
+    {path: 'contact', component: ContactComponent}
 ];
