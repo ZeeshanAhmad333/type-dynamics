@@ -1,84 +1,117 @@
-<div class="hero-container d-flex align-items-center justify-content-center">
-  <div class="overlay"></div>
+<!-- HERO -->
+<section class="hero">
 
-  <div class="container text-center position-relative z-2">
+  <div class="bg-glow"></div>
 
-    <!-- Logo / Title -->
-    <h1 class="hero-title mb-3">
-      Type<span class="accent">Dynamics</span>
+  <div class="container text-center hero-content">
+
+    <h1 class="hero-title">
+      Master Your <span>Typing Speed</span>
     </h1>
 
-    <!-- Subtitle -->
-    <p class="hero-subtitle mb-4">
-      Train like a pro. Type faster, sharper, and dominate every keystroke with precision.
+    <p class="hero-subtitle">
+      Experience next-level typing with real-time feedback, smart practice,
+      and addictive challenges designed to make you unstoppable.
     </p>
 
-    <!-- CTA Buttons -->
-    <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
-      <button class="btn btn-start" (click)="startGame()">
-        Start Game
+    <div class="hero-actions">
+      <button class="btn primary" (click)="startGame()">
+         Start Game
       </button>
 
-      <button class="btn btn-practice" (click)="practiceMode()">
-        Practice Mode
+      <button class="btn outline" (click)="practiceMode()">
+        ⌨️ Practice Mode
       </button>
     </div>
 
-    <!-- Stats Cards -->
-    <div class="row stats mt-5 justify-content-center">
-
-      <div class="col-lg-3 col-md-4 col-sm-6 col-10 stat-card">
-        <div class="card-inner">
-          <h3><span class="tick">★</span> Speed</h3>
-          <p>Real-time WPM tracking</p>
-        </div>
+    <!-- Live Stats -->
+    <div class="stats row justify-content-center">
+      <div class="col-md-3 col-6 stat-box">
+        <h2>120+</h2>
+        <p>WPM Potential</p>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6 col-10 stat-card">
-        <div class="card-inner">
-          <h3><span class="tick">★</span> Accuracy</h3>
-          <p>Precision-based typing</p>
-        </div>
+      <div class="col-md-3 col-6 stat-box">
+        <h2>99%</h2>
+        <p>Accuracy Goal</p>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-6 col-10 stat-card">
-        <div class="card-inner">
-          <h3><span class="tick">★</span> Trust</h3>
-          <p>Verified & reliable platform</p>
-        </div>
+      <div class="col-md-3 col-6 stat-box">
+        <h2>∞</h2>
+        <p>Practice Modes</p>
       </div>
-
     </div>
+
   </div>
-</div>
+</section>
 
-<!-- Features Section -->
-<section class="features-section py-5">
+
+<!-- FEATURES -->
+<section class="features container">
+
+  <h2 class="section-title text-center">Why TypeDynamics?</h2>
+
+  <div class="row">
+
+    <div class="col-lg-4 col-md-6">
+      <div class="feature-card">
+        <h4>⚡ Real-Time Speed</h4>
+        <p>Track your WPM live with smooth and accurate updates.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="feature-card">
+        <h4>🎯 Smart Practice</h4>
+        <p>Adaptive lessons that evolve with your typing skill.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="feature-card">
+        <h4>📊 Deep Analytics</h4>
+        <p>Understand mistakes and improve faster than ever.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- INTERACTIVE PREVIEW -->
+<section class="preview">
+
   <div class="container text-center">
-    <h2 class="section-title mb-4">Why Choose TypeDynamics?</h2>
-    <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6 col-sm-10 feature-card mb-4">
-        <h4><span class="tick">★</span> Interactive Lessons</h4>
-        <p>Learn typing with fun challenges and games that adapt to your skill level.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-10 feature-card mb-4">
-        <h4><span class="tick">★</span> Real-time Stats</h4>
-        <p>Track your WPM, accuracy, and improvements over time with detailed analytics.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-10 feature-card mb-4">
-        <h4><span class="tick">★</span> Trusted Platform</h4>
-        <p>Millions of users rely on TypeDynamics for professional and fun typing practice.</p>
-      </div>
+
+    <h2 class="section-title">Feel the Experience</h2>
+
+    <div class="typing-box">
+      <p class="typing-text">
+        The quick brown fox jumps over the lazy dog...
+      </p>
     </div>
+
   </div>
 
+</section>
+
+
+<!-- BLOGS -->
+<section class="blogs-section container">
+  <h2 class="section-title text-center">Latest Insights</h2>
   <app-all-blogs></app-all-blogs>
 </section>
 
-<!-- Call to Action Section -->
-<section class="cta-section py-5 text-center">
+
+<!-- CTA -->
+<section class="cta text-center">
+
   <div class="container">
-    <h2 class="section-title mb-4">Ready to Improve Your Typing?</h2>
-    <button class="btn btn-start" (click)="startGame()">Start Now</button>
+    <h2>Ready to level up your typing?</h2>
+
+    <button class="btn primary mt-3" (click)="startGame()">
+      Start Now 
+    </button>
   </div>
+
 </section>

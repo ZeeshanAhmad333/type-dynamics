@@ -1,58 +1,54 @@
-<nav class="navbar navbar-expand-lg custom-navbar fixed-top" [class.scrolled]="isScrolled">
-  <div class="container">
+<nav class="nav-container" [class.scrolled]="isScrolled">
+
+  <div class="nav-inner">
 
     <!-- Logo -->
-   <a class="navbar-brand" routerLink="/">
-      <span class="logo-text">Type<span class="accent">Dynamics</span></span>
-    </a> 
-   
-    <!-- Hamburger -->
-    <button 
-      class="navbar-toggler"
-      type="button"
-      (click)="toggleMenu()"
-      [class.open]="isMenuOpen"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
+    <a class="logo" routerLink="/">
+      <span class="logo-main">Type</span>
+      <span class="logo-accent">Dynamics</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-links">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/game">Play</a></li>
+      <li><a routerLink="/keyboard">Practice</a></li>
+      <li><a routerLink="/typing-blogs">Blogs</a></li>
+      <li><a routerLink="/privacy">Privacy</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+
+    <!-- CTA -->
+    <button class="cta-btn" routerLink="/game">
+      Start Now 
     </button>
 
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
-      <ul class="navbar-nav ms-auto text-center">
-
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/game" routerLinkActive="active">Play</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/keyboard" routerLinkActive="active">Practice</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/typing-blogs" routerLinkActive="active">Blogs</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/privacy">Privacy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact</a>
-        </li>
-
-        <!-- CTA Button -->
-        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-          <button class="btn btn-cta" routerLink="/game">
-            Start Now
-          </button>
-        </li>
-
-      </ul>
+    <!-- Hamburger -->
+    <div class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
   </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.open]="isMenuOpen">
+
+    <a routerLink="/" (click)="closeMenu()">Home</a>
+    <a routerLink="/game" (click)="closeMenu()">Play</a>
+    <a routerLink="/keyboard" (click)="closeMenu()">Practice</a>
+    <a routerLink="/typing-blogs" (click)="closeMenu()">Blogs</a>
+    <a routerLink="/privacy" (click)="closeMenu()">Privacy</a>
+    <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+
+    <button class="cta-btn full" routerLink="/game" (click)="closeMenu()">
+      Start Now 
+    </button>
+
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" *ngIf="isMenuOpen" (click)="closeMenu()"></div>
+
 </nav>
