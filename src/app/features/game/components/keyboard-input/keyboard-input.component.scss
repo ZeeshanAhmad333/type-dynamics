@@ -1,0 +1,48 @@
+.container {
+  max-width: 900px;
+}
+
+.card {
+  border-radius: 15px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.paragraph-box {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.correct {
+  color: #22c55e;
+}
+
+.incorrect {
+  color: #ef4444;
+  text-decoration: underline;
+}
+
+.typing-box {
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+  border-radius: 10px;
+}
+
+.typing-box:focus {
+  box-shadow: none;
+  border-color: #38bdf8;
+}
+
+.stats h5 {
+  color: #38bdf8;
+}
+
+button {
+  border-radius: 25px;
+  padding: 10px 25px;
+}
+

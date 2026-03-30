@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top" [class.scrolled]="isScrolled">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" routerLink="/">
+      <span class="logo-text">Type<span class="accent">Dynamics</span></span>
+    </a>
+
+    <!-- Hamburger -->
+    <button 
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleMenu()"
+      [class.open]="isMenuOpen"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
+      <ul class="navbar-nav ms-auto text-center">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/game" routerLinkActive="active">Play</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/practice" routerLinkActive="active">Practice</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Leaderboard</a>
+        </li>
+
+        <!-- CTA Button -->
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <button class="btn btn-cta" routerLink="/game">
+            Start Now
+          </button>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>

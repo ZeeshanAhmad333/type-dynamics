@@ -1,1 +1,45 @@
-<p>keyboard-input works!</p>
+<div class="container mt-5">
+  <div class="card shadow-lg p-4">
+
+    <h3 class="text-center mb-3">Typing Practice</h3>
+
+    <div class="paragraph-box mb-3">
+      <span *ngFor="let item of getHighlightedText()" [ngClass]="item.class">
+        {{item.char}}
+      </span>
+    </div>
+
+   <textarea
+  #typingInput
+  class="form-control typing-box"
+  rows="4"
+  [value]="userInput"
+  (input)="onInputChange(typingInput.value)"
+  placeholder="Start typing here...">
+</textarea>
+
+    <div class="stats row text-center mt-4">
+      <div class="col-md-3">
+        <h5>WPM</h5>
+        <p>{{wpm}}</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Accuracy</h5>
+        <p>{{accuracy}}%</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Typed</h5>
+        <p>{{totalTyped}}</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Correct</h5>
+        <p>{{correctChars}}</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <button class="btn btn-primary" (click)="reset()">Restart</button>
+    </div>
+
+  </div>
+</div>

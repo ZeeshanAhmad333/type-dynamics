@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap');
+
+.custom-navbar {
+  padding: 15px 0;
+  transition: all 0.4s ease;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Scroll Effect */
+.custom-navbar.scrolled {
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Logo */
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.accent {
+  color: #22c55e;
+}
+
+/* Links */
+.nav-link {
+  color: #cbd5f5;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover underline animation */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: linear-gradient(90deg, #38bdf8, #22c55e);
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #38bdf8;
+}
+
+/* Active */
+.nav-link.active {
+  color: #22c55e;
+}
+
+/* CTA Button */
+.btn-cta {
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  border-radius: 30px;
+  padding: 10px 25px;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(34,197,94,0.6);
+}
+
+/* Hamburger */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.navbar-toggler span {
+  width: 25px;
+  height: 3px;
+  background: #e2e8f0;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Animate hamburger */
+.navbar-toggler.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile menu */
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    background: rgba(2, 6, 23, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+
+  .nav-link {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+
+}
