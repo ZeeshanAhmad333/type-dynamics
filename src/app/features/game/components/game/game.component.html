@@ -131,19 +131,19 @@
       
       <!-- AK-47 Gun -->
       <div class="ak47-gun" [style.transform]="'rotate(' + sniperAngle + 'deg)'">
-        <img src="https://i.imgur.com/YjKZx3L.png" 
+        <img src="assets/images/firing.gif" 
              class="gun-sprite" 
              alt="AK-47" />
         
-        <!-- Muzzle Flash -->
+        <!-- Muzzle Flash Here -->
         <div class="muzzle-flash" *ngIf="muzzleFlash">
-          <img src="https://i.imgur.com/xK5QHVN.gif" alt="flash" />
+          <img src="assets/images/muzzle-flash.gif" alt="flash" />
         </div>
       </div>
 
       <!-- Shooter Person -->
       <div class="shooter-body">
-        <img src="https://i.imgur.com/8KpZqLc.gif" 
+        <img src="assets/images/shooter-body.gif" 
              class="shooter-sprite" 
              alt="shooter" />
       </div>
@@ -177,22 +177,22 @@
             <div class="stat-label">SCORE</div>
             <div class="stat-value neon">{{ gs.score }}</div>
           </div>
-          <div class="stat-item">
+          <!-- <div class="stat-item">
             <div class="stat-label">HIGH SCORE</div>
             <div class="stat-value gold">{{ gs.highScore }}</div>
-          </div>
-          <div class="stat-item">
+          </div> -->
+          <!-- <div class="stat-item">
             <div class="stat-label">MEMES DESTROYED</div>
             <div class="stat-value">{{ gs.wordsDestroyed }}</div>
           </div>
           <div class="stat-item">
             <div class="stat-label">MAX COMBO</div>
             <div class="stat-value">{{ gs.maxCombo }}x</div>
-          </div>
-          <div class="stat-item">
+          </div> -->
+          <!-- <div class="stat-item">
             <div class="stat-label">ACCURACY</div>
             <div class="stat-value">{{ gs.accuracy }}%</div>
-          </div>
+          </div> -->
           <div class="stat-item">
             <div class="stat-label">RANK</div>
             <div class="stat-value">{{ gs.getLevelName() }}</div>

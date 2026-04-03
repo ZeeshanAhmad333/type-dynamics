@@ -204,7 +204,6 @@ $bg-dark: #020b12;
 .meme-missile {
   position: absolute;
   z-index: 6;
-  pointer-events: none;
 
   .missile-meme {
     width: clamp(40px, 10vw, 60px);
@@ -376,7 +375,7 @@ $bg-dark: #020b12;
 
 /* 🎮 OVERLAY */
 .screen-overlay {
-  position: fixed;
+  position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.92);
   display: flex;
@@ -394,7 +393,7 @@ $bg-dark: #020b12;
   background: rgba(10, 15, 44, 0.9);
   border-radius: 15px;
   max-width: 90%;
-  pointer-events: none;
+  // pointer-events: auto;
 
   h1 {
     color: white;
@@ -414,7 +413,7 @@ $bg-dark: #020b12;
     margin: 20px 0;
     color: rgba(255, 255, 255, 0.8);
     font-size: clamp(12px, 2.5vw, 16px);
-    
+
     p {
       margin: 10px 0;
     }
@@ -478,6 +477,7 @@ $bg-dark: #020b12;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 10px;
+  
 
   &:hover {
     background: $neon-green;
