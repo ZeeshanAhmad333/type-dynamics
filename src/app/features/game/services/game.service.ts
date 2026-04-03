@@ -95,7 +95,7 @@ export class GameService {
     { text: 'nope', meme: 'https://media.giphy.com/media/wYyTHMm50f4Dm/giphy.gif' },
     { text: 'sus', meme: 'https://media.giphy.com/media/4kWeXCB5jqCPJsmDWw/giphy.gif' },
     { text: 'doge', meme: 'https://media.giphy.com/media/Qld1cd6a6QlWw/giphy.gif' },
-    { text: 'stonks', meme: 'https://i.imgur.com/9uhHc3L.gif' },
+    // { text: 'stonks', meme: 'https://i.imgur.com/9uhHc3L.gif' },
     { text: 'nice', meme: 'https://media.giphy.com/media/pCO5tKdP22RC8/giphy.gif' },
     { text: 'chad', meme: 'https://media.giphy.com/media/CAYVZA5NRb529kKQUc/giphy.gif' },
     { text: 'meme', meme: 'https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif' },
@@ -116,7 +116,7 @@ export class GameService {
   private initAudio() {
     // Create audio pool for rapid fire
     for (let i = 0; i < 5; i++) {
-      const shoot = new Audio('assets/ak47-shot.mp3');
+      const shoot = new Audio('assets/shoot.mp3');
       shoot.volume = 0.3;
       this.shootSound.push(shoot);
 
@@ -124,7 +124,7 @@ export class GameService {
       explode.volume = 0.4;
       this.explosionSound.push(explode);
 
-      const hit = new Audio('assets/hit.mp3');
+      const hit = new Audio('assets/funny-sound.mp3');
       hit.volume = 0.2;
       this.hitSound.push(hit);
     }
